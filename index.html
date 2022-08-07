@@ -17,7 +17,14 @@
 </head>
 <body>
   <!-- Контент страницы -->
-  ...
+  <button type="button" class="btn btn-primary" data-toggle="popover" title="Сообщение" data-content="Ура, Bootstrap 4 работает">Поднеси ко мне курсор</button>
+
+<!-- После подключения jQuery, Popper и Bootstrap JS -->
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover({trigger:'hover'});
+  });
+</script>
 
 </body>
 </html>
